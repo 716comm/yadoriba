@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+<!--お酒・紅茶・コーヒー・お茶類・ソフトドリンク-->
+      <form name="offering">種類<br>
+        <select class="offering">
+          <option id="お酒">お酒</option>
+          <option id=紅茶">紅茶</option>
+          <option id="コーヒー">コーヒー</option>
+          <option id="お茶類">お茶類</option>
+          <option id="ソフトドリンク">ソフトドリンク</option>
+          <option id="フード">フード</option>
+        </select>
+      </form>
+<!--お酒の場合-->
+<!--お酒以外の場合JS使って非表示にする-->
+      <form name="alcohol">お酒カテゴリ<br>
+        <select id="alcohol" class="お酒">
+          <option id=""></option>
+          <option id="ウイスキー">ウイスキー</option>
+          <option id="ラム">ラム</option>
+          <option id="ジン">ジン</option>
+          <option id="ブランデー">ブランデー</option>
+          <option id="テキーラ">テキーラ</option>
+          <option id="焼酎">焼酎</option>
+          <option id="リキュール">リキュール</option>
+        </select>
+      </form>
+<!--未実装・ウイスキーの種類
+      <form name="sub-whiskey">
+        <select name="sub-whiskey">
+          <option value="スコッチ">スコッチ</option>
+          <option value="バーボン">バーボン</option>
+          <option value="スぺイサイド">スぺイサイド</option>
+          <option value="その他">その他</option>
+        </select>
+      </form>　-->
+<!--名前-->
+      <form name="offering-name">名前<br>
+        <input type ="text" name="offering-name">
+        </input>
+      </form>
+<!--値段-->
+      <form name="offering-price">値段<br>
+
+        <input type ="text" name="offering-price">
+        </input>円
+      </form>
+<!--説明-->
+      <form name="explanation">説明<br>
+        <textarea name ="textarea" rows="5" name="expanation">
+        </textarea>
+      </form>
+<!--データベースへ送信してHPに反映-->
+    <button type="submit" value="submit">送信
+    </button>
+
+    </body>
+  </head>
+</html>
